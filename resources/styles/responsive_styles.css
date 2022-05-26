@@ -1,2 +1,11 @@
-@media only screen and (max-width: 425px) {
+@media only screen and (min-width: 0px) and (max-width: 425px) {
+   /* Header  - Start*/
+   /* Navigation Bar */
+   .nav-text {
+      display: none;
+   }
+   .nav-icon {
+      display: block;
+   }
+   /* Header - End */
 }

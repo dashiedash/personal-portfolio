@@ -15,16 +15,48 @@
          rel="stylesheet"
       />
       <script src="resources/scripts/main_scripts.js" async></script>
+      <script
+         src="https://kit.fontawesome.com/a7437f466d.js"
+         crossorigin="anonymous"
+      ></script>
    </head>
    <body>
       <header>
-         <a href="index.html"><p class="strawberry">&#127827;</p></a>
          <nav role="navigation">
+            <a href="index.html"><p class="strawberry">&#127827;</p></a>
             <ul>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="#about">About Me</a></li>
-               <li><a href="#projects">Projects</a></li>
-               <li><a href="#contact">Contact Me</a></li>
+               <li class="active">
+                  <a href="index.html">
+                     <span class="home nav-text">Home</span>
+                     <div class="nav-icon">
+                        <i class="fa-solid fa-house-chimney"></i>
+                     </div>
+                  </a>
+               </li>
+               <li>
+                  <a href="#about">
+                     <span class="about nav-text">About Me</span>
+                     <div class="nav-icon">
+                        <i class="fa-solid fa-user-large"></i>
+                     </div>
+                  </a>
+               </li>
+               <li>
+                  <a href="#projects"
+                     ><span class="projects nav-text">Projects</span>
+                     <div class="nav-icon">
+                        <i class="fa-solid fa-keyboard"></i>
+                     </div>
+                  </a>
+               </li>
+               <li>
+                  <a href="#contact">
+                     <span class="contact nav-text">Contact Me</span>
+                     <div class="nav-icon">
+                        <i class="fa-solid fa-phone"></i>
+                     </div>
+                  </a>
+               </li>
             </ul>
          </nav>
       </header>
