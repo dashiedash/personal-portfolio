@@ -4,6 +4,7 @@
    .banner {
       grid-column: 1 / span 5;
       margin: 0;
+      border-radius: 0;
    }
    /* Main - End */
 }
