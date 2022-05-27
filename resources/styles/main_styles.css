@@ -96,6 +96,7 @@ main {
    background-color: hsl(325, 96%, 20%);
    margin: 1rem;
    padding: 1rem;
+   border-radius: 2rem;
    display: flex;
    flex-direction: column;
    align-items: center;
