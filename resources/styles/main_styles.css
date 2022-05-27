@@ -23,14 +23,14 @@ nav {
    top: 0px;
    height: min-content;
    width: 100%;
-   font-size: 1.25em;
+   font-size: 1.25rem;
    background-color: hsl(0, 0%, 7%);
 }
 
 .strawberry {
    display: flex;
-   height: 2em;
-   padding: 0 0.25em;
+   height: 2rem;
+   padding: 0 0.25rem;
    background-color: hsl(356, 75%, 80%);
    align-items: center;
 }
@@ -58,7 +58,7 @@ nav li a {
    justify-content: center;
    font-family: "PT Sans Narrow", "Arial Narrow", sans-serif;
    font-weight: bold;
-   height: 2em;
+   height: 2rem;
    color: hsl(0, 0%, 95%);
 }
 
@@ -75,6 +75,10 @@ nav li a:hover {
 }
 
 /* Banner */
-
+.banner img {
+   width: auto;
+   height: 15rem;
+   border-radius: 50%;
+}
 
 /* Header - End */
