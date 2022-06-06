@@ -99,7 +99,7 @@ main {
    background-color: hsl(325, 96%, 20%);
    max-width: 300px;
    margin: 1rem;
-   padding: 2rem;
+   padding: 1rem;
    border-radius: 2rem;
    display: flex;
    flex-direction: column;
@@ -120,5 +120,14 @@ main {
 
 address {
    font-style: normal;
+   margin: 1rem;
+}
+
+address > * {
+   padding: 0.25rem 0;
+}
+
+address a {
+   text-decoration: none;
 }
 /* Main - End */
