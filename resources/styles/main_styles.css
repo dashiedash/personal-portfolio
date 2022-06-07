@@ -25,6 +25,16 @@ html {
 .dark-text {
    color: hsl(0, 0%, 7%);
 }
+
+h2 {
+   font-family: "PT Sans Narrow", "Arial Narrow", sans-serif;
+   font-size: 2rem;
+}
+
+p,
+span {
+   font-family: "Noto Sans", "Arial", sans-serif;
+}
 /* Global Styling - End *.
 
 /* Header  - Start*/
@@ -100,14 +110,21 @@ main {
    max-width: 300px;
    margin: 1rem;
    padding: 1rem;
-   border-radius: 2rem;
+   border-radius: 1rem;
    display: flex;
    flex-direction: column;
    align-items: center;
+}
+
+.banner:hover {
+   box-shadow: 0.25rem 0.25rem 0.25rem hsla(39, 96%, 53%, 0.5);
+}
+
+.banner p {
    font-family: "Roboto Mono", "Consolas", "Courier New", Courier, monospace;
 }
 
-.banner .address-icon {
+.address-icon {
    font-size: 1.25rem;
 }
 
@@ -118,7 +135,95 @@ main {
    margin: 1rem 0;
 }
 
+.user-tag {
+   line-height: 1.75rem;
+}
+
+/* Sections */
+section {
+   grid-column: 2 / span 4;
+}
+
+/* Section Cards */
+.section-card {
+   background-color: hsl(215, 76%, 75%);
+   margin: 1rem;
+   border: 0.25rem solid hsl(215, 76%, 65%);
+   border-radius: 0.5rem;
+   padding: 1rem;
+   text-align: left;
+}
+
+.section-card:hover {
+   box-shadow: 0.25rem 0.25rem 0.25rem hsla(356, 74%, 52%, 0.5);
+}
+
+/* About */
+#about {
+   grid-row: 1;
+   grid-column: 2 / span 3;
+}
+
+/* Skills */
+#skills {
+   grid-row: 1;
+   grid-column: 5;
+   height: fit-content;
+}
+
+.skill-icon {
+   font-size: 1.75rem;
+}
+
+.skill-container {
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.icon-group {
+   display: flex;
+   position: relative;
+   justify-content: center;
+   padding: 0.25rem;
+}
+
+.tooltip {
+   visibility: hidden;
+   position: absolute;
+   z-index: 999;
+   text-align: center;
+   bottom: 150%;
+   padding: 0.5rem;
+   background-color: hsl(65, 11%, 25%);
+   border-radius: 0.25rem;
+}
+
+.tooltip::after {
+   content: " ";
+   position: absolute;
+   top: 100%; /* At the bottom of the tooltip */
+   left: 50%;
+   margin-left: -5px;
+   border: 5px solid;
+   border-color: hsl(65, 11%, 25%) transparent transparent transparent;
+}
+
+.icon-group:hover .tooltip {
+   visibility: visible;
+}
+
+/* Projects */
+#projects {
+   display: grid;
+}
+
+#projects > * {
+   grid-column: span 5;
+}
+
+/* Contact */
 address {
+   grid-row: 2;
    font-style: normal;
    margin: 1rem;
 }
@@ -131,9 +236,9 @@ address a {
    text-decoration: none;
 }
 
-/* Sections */
-section {
-   grid-column: 2 / span 4;
+.card-container,
+.skill-container {
+   display: flex;
 }
 
 /* Main - End */

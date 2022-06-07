@@ -1,6 +1,4 @@
 @media only screen and (min-width: 1024px) {
-   /* Main - start */
-   /* Sections */
 }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
@@ -17,18 +15,23 @@
    }
 
    /* Sections */
-   section {
-      grid-column: 1 / span 5;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-   }
-
-   .about-me {
+   #about {
+      grid-row: auto;
       grid-column: 1 / span 3;
    }
 
-   .skills {
+   #skills {
+      grid-row: auto;
       grid-column: 4 / span 2;
+   }
+
+   #projects {
+      grid-column: 1 / span 5;
+   }
+
+   address {
+      grid-row: auto;
+      grid-column: span 5;
    }
    /* Main - End */
 }
