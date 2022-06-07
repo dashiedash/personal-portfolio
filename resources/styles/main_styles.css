@@ -130,4 +130,10 @@ address > * {
 address a {
    text-decoration: none;
 }
+
+/* Sections */
+section {
+   grid-column: 2 / span 4;
+}
+
 /* Main - End */
